@@ -1,0 +1,6 @@
+- User can create posts
+- User can login and register
+- Can logout
+- Post Creation
+- Post Like
+- Post Delete
