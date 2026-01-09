@@ -1,7 +1,9 @@
 const mongoose = require('mongoose');
 const { loadEnvFile } = require('node:process');
 
-loadEnvFile();
+if (process.env.NODE_ENV !== "production") {
+  loadEnvFile();
+}
 
 mongoose.connect(process.env.MONGO_URL);
 
